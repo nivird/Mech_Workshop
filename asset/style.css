@@ -1,0 +1,93 @@
+.navbar-custom
+{
+    background-color: #004C97;
+}
+
+.navbar-nav .nav-link
+{
+    color: #ffffff;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.hero-section
+{
+    background-color: #f4f4f4;
+    color:#004C97;
+    text-align: center;
+}
+
+.title1
+{
+    font-size:xx-large;
+}
+
+.title2
+{
+    color: #333333;
+    font-size: larger;
+}
+
+.title3
+{
+color: #004C97;
+font-weight: bolder;
+}
+.services:hover a{
+    color: #ffffff;
+}
+
+.services:hover
+{
+    background-color: #004C97;
+}
+.services a
+{
+text-decoration: none;
+color: #ffffff;
+display:block;
+
+}
+.services
+{
+    border-radius: 5px;
+    padding:5px;
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.slideshow
+{
+    background-color: #f4f4f4;
+    color:#004C97;
+    text-align: center;
+}
+
+.footer
+{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.slideshow li a
+{
+    text-decoration: none;    
+}
+
+.footer li a
+{
+    text-decoration: none;
+    color: #f4f4f4;    
+}
+.navbar-toggler
+{
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

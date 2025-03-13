@@ -1,109 +1,112 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Nivethitha-Balaji">
-        <meta name="description" content="self-project">
+        <title>Mocanik</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="car repairs, top quality services" />
+        <link rel="stylesheet" href="/asset/style.css">
+        <!--bootstrap 5.0 dowbloaded cdn from bootstrap website for both css and js-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./assets/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <!--Navigation bar with logo, name, menu items and search bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+    <div><!--Navigational bar section with logo, menu items and signup and login links, -->
+        <!--all refered from w3school BS section and their examples for Navbar, collapse, buttons, grid, link sections-->
+        <!--signup and login display in top right corner-->
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-inverse">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../Mech_Workshop/assets/images/Car-logos-5.jpg" alt="logo_pic" height="24" width="30" class="d-inline-block align-text-top">Mech Works</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Service 1</a></li>
-                      <li><a class="dropdown-item" href="#">Service 2</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Service 3</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-
-          <!--slide show pictures-->
-          <div>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../Mech_Workshop/assets/images/mech1.jpg" class="d-block w-100" alt="image 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Mech_Workshop/assets/images/mech2.jpg" class="d-block w-100" alt="image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../Mech_Workshop/assets/images/mech3.jpg" class="d-block w-100" alt="image 3">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+           
+                <a class="navbar-brand" href="#"><img src="./asset/Logo-print-color-on-white.png" alt="logo" width="100" height="50" class="d-inline-block align-text-top"></a>
+                <!--toggler icon and designed from https://www.youtube.com/watch?v=45QSuJaHEs -->
+                <!---->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-           <!-- <ul class="ss_images">
-                <li><img src="../Mech_Workshop/assets/images/1000s.jpg" alt="image1"></li>
-                <li><img src="../Mech_Workshop/assets/images/images.jpg" alt="image2"></li>
-                <li><img src="../Mech_Workshop/assets/images/mechanic-working-on-engine.jpg" alt="image3"></li>
-            </ul>-->
-        </div>
-        <div class="container mt-4">
-          <div class="row text-center">
-              <div class="col-md-4">
-                  <p class="firstBox p-3 border rounded shadow bg-light">Details of the cars</p>
-              </div>
-              <div class="col-md-4">
-                  <p class="secondBox p-3 border rounded shadow bg-light">Details of the auto parts</p>
-              </div>
-              <div class="col-md-4">
-                  <p class="thirdBox p-3 border rounded shadow bg-light">Details of the technologies</p>
-              </div>
-          </div>
-      </div>
-      <div class="container mt-4">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-4">
-                <a class="profile1" href="#">
-                    <img src="../Mech_Workshop/assets/images/automan1.jpg" class="img-fluid rounded-circle shadow-lg" alt="mechanic 1">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a class="profile2" href="#">
-                    <img src="../Mech_Workshop/assets/images/automan2.jpg" class="img-fluid rounded-circle shadow-lg" alt="mechanic 2">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a class="profile3" href="#">
-                    <img src="../Mech_Workshop/assets/images/automan3.jpg" class="img-fluid rounded-circle shadow-lg" alt="mechanic 3">
-                </a>
-            </div>
-        </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+</ul>
+                      <ul class="navbar-nav">
+                        <li class="nav-item me-3"><a href="#" class="nav-link text-white">Sign Up</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Login</a></li>
+                      </ul>
+                   </nav>
     </div>
-    </body>
+    <div class="hero-section">
+        <p class="title1">Your Mobile Mechanic Service</p>
+        <p class="title2"> Find & book a trusted mechanic now!</p>
+        <a href="#"><button class="btn btn-Danger">Book a Mechanic</button></a>
+    </div>
+    <div class="container mt-3">
+        <p class="text-center title3 fs-3 fw-bold">Our Services</p>
+       <div class="row g-3 gx-3">
+        <div class="col-md-6">
+             <div class="services"><a href="#">Tune-ups</a>
+            </div>
+            </div>
+       <div class="col-md-6">
+        <div class="services"><a href="#">oil Change</a></div>
+    </div>
+                <div class="col-md-6">
+                    <div class="services"><a href="#">Fluids</a></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services"><a href="#">Diagnostics</a></div>
+                </div>
+               
+               <div class="col-md-6">
+                <div class="services"><a href="#">Custom Requests</a></div>
+               </div>
+               
+               <div class="col-md-6">
+                <div class="services"><a href="#">Towing </a></div>
+               </div>
+               
+               <div class="col-md-6">
+                <div class="services"><a href="#">Tires and Balancing</a></div>
+               </div>
+               
+                <div class="col-md-6">
+                    <div class="services"><a href="#">Painting & Body</a></div>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="services"><a href="#">Installations</a></div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="services"><a href="#">Repairs </a></div>
+                </div>
+               
+       </div>
+                
+    </div>
+    <div class="slideshow">
+        <p>Slide Shows</p>
+        <ul class="list-unstyled">
+            <li><a href="#">Customer Reviews</a> </li>
+            <li><a href="#">Before & After</a> </li>
+            <li><a href="#">Mechanic At work</a> </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <ul class="list-unstyled d-flex justify-content-center gap-2 mb-2">
+            <li><a href="#">Privacy policy</a> </li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Contact Support</a> </li>
+        </ul>
+        <p>copyright @ 2025 Mocanik. All rights reserved </p>
+    </div>
+</body>
+
 </html>
