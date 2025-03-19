@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/style.css">
+    <style>
+        .signup-container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .form-control {
+            margin-top: 0px;
+            padding: 1px;
+        }
+        .form-label {
+            margin-bottom:  2px;
+        }
+       
+
+        .mb-2
+        {
+            margin-bottom: 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div><!--Navigational bar section with logo, menu items and signup and login links, -->
+        <!--all refered from w3school BS section and their examples for Navbar, collapse, buttons, grid, link sections-->
+        <!--signup and login display in top right corner-->
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-inverse">
+            <div class="container-fluid">
+           
+                <a class="navbar-brand" href="/index.html"><img src="./asset/Logo-print-color-on-white.png" alt="logo" width="100" height="50" class="d-inline-block align-text-top"></a>
+                <!--toggler icon and designed from https://www.youtube.com/watch?v=45QSuJaHEs -->
+                <!---->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+</ul>
+                      <ul class="navbar-nav">
+                        <li class="nav-item me-3"><a href="#" class="nav-link text-white">Sign Up</a></li>
+                        <li class="nav-item"><a href="/login.html" class="nav-link text-white">Login</a></li>
+                      </ul>
+                   </nav>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 signup-container">
+                <form id="signupForm" class="p-3 border rounded bg-white shadow" onsubmit="return validateForm()">
+                    <h2 class="text-center mb-3">Sign Up</h2>
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name:</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name:</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email ID (Username):</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="password" class="form-label">Create Password:</label>
+                        <input type="password" id="password" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="confirmPassword" class="form-label">Re-enter Password:</label>
+                        <input type="password" id="confirmPassword" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="street" class="form-label">Address1:</label>
+                        <input type="text" id="street" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="town" class="form-label">Address2:</label>
+                        <input type="text" id="town" class="form-control" required>
+                    </div>
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-6">
+                            <label for="state" class="form-label">State:</label>
+                            <input type="text" id="state" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="zip" class="form-label">Zip Code:</label>
+                            <input type="text" id="zip" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="carName" class="form-label">Car Name:</label>
+                        <input type="text" id="carName" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="carModel" class="form-label">Car Model Name:</label>
+                        <input type="text" id="carModel" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="list-unstyled d-flex justify-content-center gap-2 mb-2">
+            <li><a href="#">Privacy policy</a> </li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Contact Support</a> </li>
+        </ul>
+        <p>copyright @ 2025 Mocanik. All rights reserved </p>
+    </div>
+    <script>
+        function validateForm() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
