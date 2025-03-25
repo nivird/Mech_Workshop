@@ -251,3 +251,67 @@ p {
     color: #0b7de9;
     font-weight: bold;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Small Devices (phones, <600px) */
+@media only screen and (max-width: 600px) {
+    .title1 {
+        font-size: large;
+    }
+
+    .title2 {
+        font-size: medium;
+    }
+
+    .slideshow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .glass-container {
+        padding: 15px;
+        margin-top: 30px;
+    }
+}
+
+/* Medium Devices (tablets, 601px - 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .title1 {
+        font-size: x-large;
+    }
+
+    .carousel-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .glass-container {
+        width: 80%;
+    }
+}
+
+/* Large Devices (desktops, >992px) */
+@media only screen and (min-width: 993px) {
+    .box {
+        width: 300px;
+    }
+
+    .glass-container {
+        width: 500px;
+    }
+}
