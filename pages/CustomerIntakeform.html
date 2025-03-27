@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Mechanic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+           
+                <a class="navbar-brand" href="/index.html"><img src="/asset/images/Logo-print-color-on-white.png" alt="Mocanik-logo" width="100" height="50" class="d-inline-block align-text-top"></a>
+                <!--toggler icon and designed from https://www.youtube.com/watch?v=45QSuJaHEs -->
+                <!---->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/services.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+</ul>
+                       <!-- Right side: Phone number and Appointment Button -->
+                <div class="contact-info">
+                  <span class="text-white fw-bold">📞 (123) 456-7890</span>
+                  <a href="/pages/Booking.html" class="btn btn-danger mt-2">Book an Appointment</a>
+              </div>
+                      </div>
+                   </nav>
+    </div>
+    <div class="container mt-5">
+        <h2>Book a Mechanic</h2>
+        <form class="p-4 border rounded">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" name="fullName" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNumber" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Vehicle Make</label>
+                <input type="text" class="form-control" name="make" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Vehicle Model</label>
+                <input type="text" class="form-control" name="model" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Year</label>
+                <input type="text" class="form-control" name="year" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">License Plate</label>
+                <input type="text" class="form-control" name="licensePlate" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Service</label>
+                <select class="form-control" name="service">
+                    <option>Oil Change</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" name="date" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Time</label>
+                <input type="time" class="form-control" name="time" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Payment Method</label>
+                <select class="form-control" name="paymentMethod">
+                    <option>Stripe</option>
+                    <option>CashApp</option>
+                    <option>Venmo</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

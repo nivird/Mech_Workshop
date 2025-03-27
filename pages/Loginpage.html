@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mocanik</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Car repairs, top quality services">
+        <link rel="stylesheet" href="/asset/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/asset/images/Logo-print-color-on-white.png" alt="Mocanik-logo" width="100" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <!-- Right Side: Phone & Appointment -->
+                <div class="contact-info text-end">
+                    <span class="text-white fw-bold">📞 (123) 456-7890</span>
+                    <a href="/pages/appointments.html" class="btn btn-danger mt-2">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Glass Container & Carousel -->
+    <div class="container d-flex align-items-center justify-content-between mt-5">
+        <!-- Left: Glass Container with Buttons -->
+        <div class="glass-container text-center p-4">
+            <h2 class="text-white">Choose Your Role</h2>
+            <a href="/pages/MechLogin.html" class="btn btn-danger btn-lg fw-bold my-3 w-100">Mechanic</a>
+            <a href="/pages/Customerlogin.html" class="btn btn-danger btn-lg fw-bold w-100">Customer</a>
+        </div>
+
+        <!-- Right: Image Carousel -->
+        <div id="imageCarousel" class="carousel slide w-50" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/asset/images/ad1.jpeg" class="d-block w-100" alt="Mechanic at Work">
+                </div>
+                <div class="carousel-item">
+                    <img src="/asset/images/ad2.jpeg" class="d-block w-100" alt="Happy Customer">
+                </div>
+                <div class="carousel-item">
+                    <img src="/asset/images/ad3.jpg" class="d-block w-100" alt="Car Workshop">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
